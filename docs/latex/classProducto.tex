@@ -1,0 +1,205 @@
+\doxysection{Producto Class Reference}
+\hypertarget{classProducto}{}\label{classProducto}\index{Producto@{Producto}}
+
+
+Clase \doxylink{classProducto}{Producto} que representa un item en el inventario.  
+
+
+
+
+{\ttfamily \#include $<$Producto.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProducto_a6f8b8c81155c3767c2039b9290dd28eb}{Producto}} (std\+::string n, float p, int s, int d)
+\begin{DoxyCompactList}\small\item\em Constructor de \doxylink{classProducto}{Producto}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProducto_a2033a37ea4a80458c00d84c2443ca3b5}{actualizar\+Precio}} (float nuevo\+Precio)
+\begin{DoxyCompactList}\small\item\em Actualiza el precio del producto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProducto_a48f7383d79ada149860044b8883f18c8}{resumen\+Producto}} ()
+\begin{DoxyCompactList}\small\item\em Muestra un resumen con las características del producto. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classProducto_a54f2b8cc3300f1774e0775a7fcb8dee9}{vender}} (int cantidad)
+\begin{DoxyCompactList}\small\item\em Vende una cantidad del producto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classProducto_aa71d1e79dfd37a4dbfa7119d7d672617}{reabastecer}} (int cantidad)
+\begin{DoxyCompactList}\small\item\em Reabastece el stock. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classProducto_a54b57357246f0a67d8e3d838659b70b1}{consultar\+Valor\+Inventario}} ()
+\begin{DoxyCompactList}\small\item\em Consulta el valor total en inventario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classProducto_a01fce14cd3571cb1458e2d65a7a36a0e}{nombre}}
+\begin{DoxyCompactList}\small\item\em Nombre del producto. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classProducto_a017dcfa20e883251eaa6c74ae6588c78}{precio}}
+\begin{DoxyCompactList}\small\item\em Precio del producto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classProducto_a2673b6ad10bcaa487e19cf4ea12079ff}{stock}}
+\begin{DoxyCompactList}\small\item\em Cantidad en el inventario. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classProducto_ab3cb9de17de0eac174b2adffe617e786}{descuento}}
+\begin{DoxyCompactList}\small\item\em Porcentaje de descuento vigente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase \doxylink{classProducto}{Producto} que representa un item en el inventario. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classProducto_a6f8b8c81155c3767c2039b9290dd28eb}\label{classProducto_a6f8b8c81155c3767c2039b9290dd28eb} 
+\index{Producto@{Producto}!Producto@{Producto}}
+\index{Producto@{Producto}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{Producto()}{Producto()}}
+{\footnotesize\ttfamily Producto\+::\+Producto (\begin{DoxyParamCaption}\item[{std\+::string}]{n,  }\item[{float}]{p,  }\item[{int}]{s,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+Constructor de \doxylink{classProducto}{Producto}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Nombre. \\
+\hline
+{\em p} & Precio. \\
+\hline
+{\em s} & Stock. \\
+\hline
+{\em d} & Descuento.\\
+\hline
+{\em n} & Nombre del producto. \\
+\hline
+{\em p} & Precio del producto. \\
+\hline
+{\em s} & Cantidad en inventario. \\
+\hline
+{\em d} & Porcentaje de descuento. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classProducto_a2033a37ea4a80458c00d84c2443ca3b5}\label{classProducto_a2033a37ea4a80458c00d84c2443ca3b5} 
+\index{Producto@{Producto}!actualizarPrecio@{actualizarPrecio}}
+\index{actualizarPrecio@{actualizarPrecio}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{actualizarPrecio()}{actualizarPrecio()}}
+{\footnotesize\ttfamily void Producto\+::actualizar\+Precio (\begin{DoxyParamCaption}\item[{float}]{nuevo\+Precio }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza el precio del producto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nuevo\+Precio} & Nuevo precio a asignar. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classProducto_a54b57357246f0a67d8e3d838659b70b1}\label{classProducto_a54b57357246f0a67d8e3d838659b70b1} 
+\index{Producto@{Producto}!consultarValorInventario@{consultarValorInventario}}
+\index{consultarValorInventario@{consultarValorInventario}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{consultarValorInventario()}{consultarValorInventario()}}
+{\footnotesize\ttfamily float Producto\+::consultar\+Valor\+Inventario (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Consulta el valor total en inventario. 
+
+Calcula el valor total del inventario de este producto.
+
+\begin{DoxyReturn}{Returns}
+Valor total (precio \texorpdfstring{$\ast$}{*} stock).
+
+Valor total basado en precio por stock. 
+\end{DoxyReturn}
+\Hypertarget{classProducto_aa71d1e79dfd37a4dbfa7119d7d672617}\label{classProducto_aa71d1e79dfd37a4dbfa7119d7d672617} 
+\index{Producto@{Producto}!reabastecer@{reabastecer}}
+\index{reabastecer@{reabastecer}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{reabastecer()}{reabastecer()}}
+{\footnotesize\ttfamily void Producto\+::reabastecer (\begin{DoxyParamCaption}\item[{int}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Reabastece el stock. 
+
+Reabastece el stock del producto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Cantidad adicional en stock.\\
+\hline
+{\em cantidad} & Cantidad a añadir al stock. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classProducto_a48f7383d79ada149860044b8883f18c8}\label{classProducto_a48f7383d79ada149860044b8883f18c8} 
+\index{Producto@{Producto}!resumenProducto@{resumenProducto}}
+\index{resumenProducto@{resumenProducto}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{resumenProducto()}{resumenProducto()}}
+{\footnotesize\ttfamily void Producto\+::resumen\+Producto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Muestra un resumen con las características del producto. 
+
+\Hypertarget{classProducto_a54f2b8cc3300f1774e0775a7fcb8dee9}\label{classProducto_a54f2b8cc3300f1774e0775a7fcb8dee9} 
+\index{Producto@{Producto}!vender@{vender}}
+\index{vender@{vender}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{vender()}{vender()}}
+{\footnotesize\ttfamily float Producto\+::vender (\begin{DoxyParamCaption}\item[{int}]{cantidad }\end{DoxyParamCaption})}
+
+
+
+Vende una cantidad del producto. 
+
+Vende una cantidad determinada del producto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cantidad} & Cantidad a vender. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor total de la venta considerando precio y descuento. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classProducto_ab3cb9de17de0eac174b2adffe617e786}\label{classProducto_ab3cb9de17de0eac174b2adffe617e786} 
+\index{Producto@{Producto}!descuento@{descuento}}
+\index{descuento@{descuento}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{descuento}{descuento}}
+{\footnotesize\ttfamily int Producto\+::descuento\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Porcentaje de descuento vigente. 
+
+\Hypertarget{classProducto_a01fce14cd3571cb1458e2d65a7a36a0e}\label{classProducto_a01fce14cd3571cb1458e2d65a7a36a0e} 
+\index{Producto@{Producto}!nombre@{nombre}}
+\index{nombre@{nombre}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{nombre}{nombre}}
+{\footnotesize\ttfamily std\+::string Producto\+::nombre\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Nombre del producto. 
+
+\Hypertarget{classProducto_a017dcfa20e883251eaa6c74ae6588c78}\label{classProducto_a017dcfa20e883251eaa6c74ae6588c78} 
+\index{Producto@{Producto}!precio@{precio}}
+\index{precio@{precio}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{precio}{precio}}
+{\footnotesize\ttfamily float Producto\+::precio\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Precio del producto. 
+
+\Hypertarget{classProducto_a2673b6ad10bcaa487e19cf4ea12079ff}\label{classProducto_a2673b6ad10bcaa487e19cf4ea12079ff} 
+\index{Producto@{Producto}!stock@{stock}}
+\index{stock@{stock}!Producto@{Producto}}
+\doxysubsubsection{\texorpdfstring{stock}{stock}}
+{\footnotesize\ttfamily int Producto\+::stock\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Cantidad en el inventario. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Producto_8h}{Producto.\+h}}\item 
+src/\mbox{\hyperlink{Producto_8cpp}{Producto.\+cpp}}\end{DoxyCompactItemize}

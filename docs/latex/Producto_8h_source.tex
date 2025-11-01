@@ -1,0 +1,36 @@
+\doxysection{Producto.\+h}
+\hypertarget{Producto_8h_source}{}\label{Producto_8h_source}\index{include/Producto.h@{include/Producto.h}}
+\mbox{\hyperlink{Producto_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PRODUCTO\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PRODUCTO\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classProducto}{Producto}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00015\ \ \ \ \ std::string\ \mbox{\hyperlink{classProducto_a01fce14cd3571cb1458e2d65a7a36a0e}{nombre}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classProducto_a017dcfa20e883251eaa6c74ae6588c78}{precio}};}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classProducto_a2673b6ad10bcaa487e19cf4ea12079ff}{stock}};}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classProducto_ab3cb9de17de0eac174b2adffe617e786}{descuento}};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classProducto}{Producto}}(std::string\ n,\ \textcolor{keywordtype}{float}\ p,\ \textcolor{keywordtype}{int}\ s,\ \textcolor{keywordtype}{int}\ d);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProducto_a2033a37ea4a80458c00d84c2443ca3b5}{actualizarPrecio}}(\textcolor{keywordtype}{float}\ nuevoPrecio)\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classProducto_a017dcfa20e883251eaa6c74ae6588c78}{precio}}\ =\ nuevoPrecio;}
+\DoxyCodeLine{00045\ \ \ \ \ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProducto_a48f7383d79ada149860044b8883f18c8}{resumenProducto}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classProducto_a54f2b8cc3300f1774e0775a7fcb8dee9}{vender}}(\textcolor{keywordtype}{int}\ cantidad);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classProducto_aa71d1e79dfd37a4dbfa7119d7d672617}{reabastecer}}(\textcolor{keywordtype}{int}\ cantidad);}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classProducto_a54b57357246f0a67d8e3d838659b70b1}{consultarValorInventario}}();}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PRODUCTO\_H}}
+
+\end{DoxyCode}

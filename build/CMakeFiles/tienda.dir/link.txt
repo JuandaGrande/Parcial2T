@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/tienda.dir/src/main.cpp.o CMakeFiles/tienda.dir/src/Producto.cpp.o -o tienda 

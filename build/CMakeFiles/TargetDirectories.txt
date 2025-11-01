@@ -1,0 +1,3 @@
+/workspaces/Parcial2T/build/CMakeFiles/tienda.dir
+/workspaces/Parcial2T/build/CMakeFiles/edit_cache.dir
+/workspaces/Parcial2T/build/CMakeFiles/rebuild_cache.dir
